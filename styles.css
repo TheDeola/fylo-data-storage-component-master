@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Colors
+
+Primary */
+
+:root {
+    --Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+
+/* Neutral */
+
+    --Pale-Blue: hsl(243, 100%, 93%);
+    --Grayish-Blue: hsl(229, 7%, 55%);
+    --Dark-Blue: hsl(228, 56%, 26%);
+    --Very-Dark-Blue: hsl(229, 57%, 11%);
+}
+html, body {
+    margin: 0 auto;
+    width: 375px;
+    height: 100vh;
+}
+.container {
+    background-image: url(./images/bg-mobile.png);
+    margin: 30px 20px;
+    padding: 10% 5%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-repeat: no-repeat;
+}
+.box {
+    border: 1px solid var(--Dark-Blue);
+    background-color: var(--Dark-Blue);
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 10%;
+    width: 300px;
+    height: 180px;
+}
+.box-1 {
+    border-top-right-radius: 50px;
+}
+.box-2 {
+    color: var(--Pale-Blue);
+    height: 170px;
+}
+.logo {
+    margin-bottom: 30px;
+}
+.icons img {
+    width: 52px;
+    height: 48px;
+    margin-right: 10px;
+    border: 1px solid var(--Dark-Blue);
+    border-radius: 10px;
+    padding: 10px;
+    background-color: var(--Very-Dark-Blue);
+}
+h1 {
+    font-weight: lighter;
+    opacity: 70%;
+}
+h2 {
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: white;
+    width: 70%;
+    padding: 15px;
+    color: var(--Very-Dark-Blue);
+    margin: 20px auto;
+    text-align: center;
+}
+.big {
+    font-size: xx-large;
+}
+.bold {
+    font-weight: 700;
+    opacity: 100%;
+}
+#storage-level {
+    display: flex;
+    margin: 20px auto 10px;
+    padding: 4px;
+    border-radius: 10px;
+    border-color: var(--Very-Dark-Blue);
+    background-color: var(--Very-Dark-Blue);
+}
+.stl-left {
+    color:hsl(6, 100%, 80%);
+    background-image: linear-gradient(50deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    padding: 5px;
+    border-radius: 10px;
+    width: 80%;
+}
+.stl-right {
+    color: white;
+    background-image:  linear-gradient(50deg, white, white);
+    padding: 7px;
+    border-radius: 50%;
+    width: 10px;
+    margin-left: -6%;
+}
+.gb-left {
+    color: var(--Grayish-Blue);
+}
+.right {
+    padding-left: 140px;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+    font-size: 11px; 
+}
+
+/* Desktop styling */
+
+@media screen and (min-width:600px) {
+    html, body {
+        width: 1440px;
+        margin: 0 auto;
+        height: 100%;
+        padding: 0;
+        background-color: var(--Very-Dark-Blue);
+    }
+    .container {
+        display: flex;
+        flex-direction: row;
+        background-image: url(./images/bg-desktop.png);
+        background-position: top;
+        position:relative;
+        background-repeat: no-repeat;
+        /* height: 50%; */
+        margin: 10% 20px;
+    }
+    .icons img {
+        width: 40px;
+        height: 40px;
+    }
+    h2 {
+        width: 40%;
+        margin: -150px 0 0 260px;
+        padding: 10px;
+        border-bottom-right-radius: 0;
+    }
+    .box-1 {
+        width: 350px;
+        height: 200px;
+        padding: 5%;
+        margin-left: 12%;
+        margin-top: -20%;
+    }
+    .box-2 {
+        width: 500px;
+        height: 150px;
+        padding: 20px 30px;
+        margin-left: -10%;
+        margin-top: -16%;
+    }
+    .stl-right { 
+        margin-left: -3%;
+    }
+    .right {
+        padding-left: 78%;
+    }
+    /* .arrow-down {
+        width: 0;
+        margin: -150px 0 0 260px;
+        height: 20px;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid white;
+    } */
+    .attribution { 
+        font-size: 11px; 
+        text-align: center; 
+        color: white;
+    }
+    .attribution a { 
+        font-size: 11px; 
+    }
+}
